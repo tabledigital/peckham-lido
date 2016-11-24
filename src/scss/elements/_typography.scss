@@ -1,0 +1,41 @@
+$sans-serif: 'Josefin Sans', sans-serif;
+$serif: 'Lora', serif;
+
+body {
+	font-family: $serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $sans-serif;
+  font-weight: 600;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h2{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+a {
+	color: $turquoise;
+}
+
+.cta-link {
+	background: $turquoise;
+	color: $white;
+	display: inline-block;
+	padding: 14px 20px;
+	text-decoration: none;
+}

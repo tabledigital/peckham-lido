@@ -1,0 +1,22 @@
+.supporters {
+  font-size: .8rem;
+  line-height: 1.4;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    &:after {
+      content: ', ';
+    }
+
+    &:last-child:after {
+      content: '';
+    }
+  }
+
+  &--main {
+    font-size: 1rem;
+  }
+}
