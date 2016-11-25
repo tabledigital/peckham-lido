@@ -3,6 +3,81 @@ body {
   color: $dark;
 }
 
+header {
+  overflow: hidden;
+}
+
+main {
+  background-image: url(/assets/images/peckham-lido-classic.jpg);
+  background-size: 109%;
+  background-position: 25% -50px;
+  background-repeat: no-repeat;
+
+}
+
 main > section {
+  //background: rgba(255, 255, 255, .8);
+  clear: both;
+  margin-bottom: 50px;
+  //max-width: 60%;
+  overflow: hidden;
   padding: 20px;
+}
+
+.highlight {
+  background: $white;
+  margin-bottom: 50px;
+	max-width: 600px;
+	padding: 20px;
+
+  &.right {
+    float: right;
+    margin-right: 20px;
+  }
+}
+
+.about {
+  h1 {
+    margin: 16vh auto 28vh auto;
+    width: 100%;
+  }
+}
+
+.commonplace {
+  background: url(/assets/images/lido-architect.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 55px;
+}
+
+.logos {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0 40px;
+
+    img {
+      max-height: 150px;
+      width: auto;
+    }
+  }
+}
+
+.faqs {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.questions {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 40px
+  }
 }
