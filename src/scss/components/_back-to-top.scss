@@ -1,12 +1,21 @@
 .back-to-top {
   backface-visibility: hidden;
   background: rgba(100,100,100,.8);
-  bottom: 10px;
+  bottom: 0;
+  box-sizing: border-box;
   color: rgba(255,255,255,.8);
   font-size: 1.5rem;
-  padding: 10px 12px;
+  line-height: 53px;
+  padding: 0 12px;
   position: fixed;
-  right: 10px;
+  right: 0;
+  text-align: center;
+  width: 53px;
+
+  @media(min-width: $bp-small-med) {
+    bottom: 10px;
+    right: 0;
+  }
 
   &:hover {
     //background-color: darken($grey, 10%);

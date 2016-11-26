@@ -80,3 +80,21 @@ main > section {
     margin-right: auto;
   }
 }
+
+.js-show-on-scroll--transition {
+  transition: .3s all ease;
+}
+
+.js-show-on-scroll {
+  opacity: 1;
+
+  &--hidden {
+    opacity: 0 !important;
+    pointer-events: none;
+    transform: translateY(56px);
+
+    @media(min-width: $bp-small-med) {
+      transform: translateX(56px);
+    }
+  }
+}

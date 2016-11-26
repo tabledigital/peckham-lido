@@ -1,11 +1,16 @@
 .social-sharing {
-  display: none;
+  bottom: 0;
+  left: 0;
+  opacity: .9;
   position: fixed;
-  right: 0;
-  top: 20vh;
 
   @media(min-width: $bp-small-med) {
+    bottom: auto;
     display: block;
+    left: auto;
+    opacity: 1;
+    right: 0;
+    top: 20vh;
   }
 
   &__list {
@@ -13,13 +18,26 @@
     padding: 0;
   }
 
+  &__item {
+    float: left;
+    width: 53px;
+
+    @media(min-width: $bp-small-med) {
+      float: none;
+      width: 70px;
+    }
+  }
+
   &__link {
     display: block;
     text-align: center;
     text-decoration: none;
-    transform: translateX(15px);
     transition: .3s all ease;
-    width: 70px;
+
+    @media(min-width: $bp-small-med) {
+      transform: translateX(15px);
+      width: 70px;
+    }
 
     &:hover {
       transform: translateX(0);
@@ -30,8 +48,12 @@
       color: $white;
       display: block;
       font-size: 1.7rem;
-      padding: 13px 26px 13px 13px;
+      padding: 13px;
       pointer-events: none;
+
+      @media(min-width: $bp-small-med) {
+        padding: 13px 26px 13px 13px;
+      }
     }
 
     .fa-facebook {
