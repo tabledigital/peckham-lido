@@ -1,22 +1,41 @@
 .supporters {
+  column-count: 8;
+  column-gap: 1rem;
   font-size: .8rem;
   line-height: 1.4;
   list-style: none;
   padding: 0;
+  text-align: left;
 
   li {
-    display: inline-block;
+    display: block;
 
+    /*
     &:after {
       content: ', ';
     }
 
     &:last-child:after {
       content: '';
-    }
+    }*/
   }
 
   &--main {
-    font-size: 1rem;
+    column-count: 1;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      &:after {
+        content: ', ';
+      }
+
+      &:last-child:after {
+        content: '';
+      }
+    }
   }
 }

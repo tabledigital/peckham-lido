@@ -1,0 +1,52 @@
+$icon-size: 60px;
+
+.social-channels {
+  margin: 0 auto;
+  text-align: center;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+
+    .fa {
+      background: $grey;
+      border-radius: 50%;
+      box-sizing: border-box;
+      color: $white;
+      font-size: 1.8rem;
+      height: $icon-size;
+      line-height: $icon-size;
+      text-align: center;
+      width: $icon-size;
+    }
+
+    a:hover {
+      .fa {
+        background: $white;
+        color: $grey;
+      }
+
+      .fa-facebook {
+        color: $facebook-blue;
+      }
+
+      .fa-twitter {
+        color: $twitter-blue;
+      }
+    }
+
+
+    .fa-facebook {
+      background-color: $facebook-blue;
+    }
+
+    .fa-twitter {
+      background-color: $twitter-blue;
+    }
+  }
+}

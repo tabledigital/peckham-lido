@@ -8,8 +8,9 @@ body {
 h1 {
 	color: $white;
 	display: inline-block;
-	font-size: 5rem;
+	font-size: 5.625rem;
 	font-style: normal;
+	letter-spacing: 2px;
 	text-align: center;
 }
 
@@ -31,13 +32,13 @@ h3 {
 	background-color: $turquoise;
 	color: $white;
 	display: inline-block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: -30px 0 0 0;
 	padding: 20px;
 }
 
 p{
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
   margin: 1rem 0;
@@ -45,6 +46,10 @@ p{
 
 a {
 	color: $turquoise;
+
+	&:hover {
+		color: darken($turquoise, 20%);
+	}
 }
 
 .cta-link {
@@ -54,6 +59,12 @@ a {
 	float: right;
 	padding: 14px 20px;
 	text-decoration: none;
+	transition: all .3s ease;
+
+	&:hover {
+		background-color: darken($orange, 10%);
+		color: $white;
+	}
 }
 
 .intro {

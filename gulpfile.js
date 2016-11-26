@@ -18,8 +18,8 @@ gulp.task('css', function(){
 gulp.task('copy', function () {
     gulp.src('./src/index.html')
         .pipe(gulp.dest('./build'));
-    gulp.src('./src/images/**/*.*')
-        .pipe(gulp.dest('./build/assets/images'));
+    gulp.src('./src/assets/**/*.*')
+        .pipe(gulp.dest('./build/assets'));
 });
 
 // Static Server + watching scss/html files
