@@ -22,7 +22,7 @@ main > section {
 }
 
 .highlight {
-  background: $white;
+  background: rgba(255, 255, 255, .9);
   margin-bottom: 50px;
   margin-left: 40px;
 	max-width: 600px;
@@ -160,5 +160,19 @@ main > section {
 
   &__photo {
     max-width: 100%;
+  }
+}
+
+.social-channels {
+  background-image: url(/assets/images/lido-group.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 120px;
+
+  .highlight {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

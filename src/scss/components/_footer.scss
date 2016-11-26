@@ -1,6 +1,9 @@
 .footer {
-  background: $battleship-grey;
+  background: rgba(0,0,0,.7);
+  box-sizing: border-box;
   color: $white;
+  height: 143px;
+  margin-top: -143px;
   overflow: hidden;
   padding: 30px 20px 30px;
 }
