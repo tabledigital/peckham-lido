@@ -1,0 +1,25 @@
+.back-to-top {
+  backface-visibility: hidden;
+  background: rgba(100,100,100,.8);
+  bottom: 10px;
+  color: rgba(255,255,255,.8);
+  font-size: 1.5rem;
+  padding: 10px 12px;
+  position: fixed;
+  right: 10px;
+
+  &:hover {
+    //background-color: darken($grey, 10%);
+    background: rgba(100,100,100,1);
+    color: $white;
+    opacity: 1;
+
+    i {
+      transform: translateY(-3px);
+    }
+  }
+
+  i {
+    transition: .3s all ease;
+  }
+}

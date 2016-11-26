@@ -1,0 +1,15 @@
+.backers {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+
+  @media(min-width: $bp-small-med) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

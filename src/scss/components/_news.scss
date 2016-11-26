@@ -1,0 +1,21 @@
+.news {
+  background-image: url(/assets/images/grass.jpg);
+  background-size: cover;
+  padding-bottom: 70px;
+  padding-top: 50px;
+
+  & > h2 {
+      color: $dark;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      text-align: center;
+  }
+
+  & > p {
+    color: $dark;
+    margin: 1rem auto 3rem;
+    max-width: 600px;
+    text-align: center;
+  }
+}

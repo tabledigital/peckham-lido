@@ -1,10 +1,14 @@
 .primary-nav {
   background: $white;
   box-shadow: 0px 1px 1px rgba(50, 50, 50, .6);
-  display: inline-block;
+  display: none;
   font-family: $sans-serif;
   margin: 20px auto;
   text-transform: uppercase;
+
+  @media(min-width: 850px) {
+    display: inline-block;
+  }
 
   &__list {
     list-style: none;

@@ -8,10 +8,14 @@ body {
 h1 {
 	color: $white;
 	display: inline-block;
-	font-size: 5.625rem;
+	font-size: 4rem;
 	font-style: normal;
 	letter-spacing: 2px;
 	text-align: center;
+
+	@media(min-width: $bp-small-med) {
+		font-size: 5.625rem;
+	}
 }
 
 h1,
@@ -25,16 +29,20 @@ h3 {
 
 .supporting-heading {
 	font-size: 1.6rem;
-		text-align: center;
+	text-align: center;
 }
 
 .section-heading {
 	background-color: $turquoise;
 	color: $white;
 	display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: -30px 0 0 0;
 	padding: 20px;
+
+	@media(min-width: $bp-small-med) {
+		font-size: 1.6rem;
+	}
 }
 
 p{

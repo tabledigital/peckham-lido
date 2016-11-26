@@ -8,10 +8,6 @@ header {
   text-align: center;
 }
 
-main {
-
-}
-
 main > section {
   //background: rgba(255, 255, 255, .8);
   clear: both;
@@ -24,10 +20,14 @@ main > section {
 .highlight {
   background: rgba(255, 255, 255, .9);
   margin-bottom: 50px;
-  margin-left: 40px;
+  margin-left: 0;
 	max-width: 600px;
 	padding: 0 20px 20px;
   position: relative;
+
+  @media(min-width: $bp-small-med) {
+    margin-left: 40px;
+  }
 
   .cta-link {
     position: absolute;
@@ -36,58 +36,22 @@ main > section {
 
   &.right {
     float: right;
-    margin-right: 40px;
+
+    @media(min-width: $bp-small-med) {
+      margin-right: 40px;
+    }
   }
-}
-
-.about {
-  background-image: url(/assets/images/peckham-lido-classic.jpg);
-  background-size: cover;
-  background-position: 25% 0;
-  background-repeat: no-repeat;
-  background-color: $about-bg;
-  background-blend-mode: multiply;
-
-  h1 {
-    margin: 16vh auto 0 auto;
-    width: 100%;
-  }
-}
-
-.strapline {
-  color: $white;
-  font-size: 2rem;
-  margin-bottom: 26vh;
-  margin: 0 auto 25vh;
-  max-width: 600px;
-  text-align: center;
 }
 
 .commonplace {
   background: url(/assets/images/lido-architect.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 105px;
 }
 
-.logos {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 
-  li {
-    margin: 0 40px;
-
-    img {
-      max-height: 150px;
-      width: auto;
-    }
-  }
-}
 
 .faqs {
   margin: 0 auto;
@@ -100,66 +64,6 @@ main > section {
 
   li {
     margin-bottom: 40px
-  }
-}
-
-.news {
-  background-image: url(/assets/images/grass.jpg);
-  background-size: cover;
-  padding-bottom: 70px;
-  padding-top: 50px;
-
-  & > h2 {
-      color: $dark;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 600px;
-      text-align: center;
-  }
-
-  & > p {
-    color: $dark;
-    margin: 1rem auto 3rem;
-    max-width: 600px;
-    text-align: center;
-  }
-}
-
-
-.backers {
-  //background-image: url(/assets/images/backers.jpg);
-  //background-size: cover;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  h2 {
-    text-align: center;
-  }
-
-  margin: 0 auto;
-  //max-width: 600px;
-  text-align: center;
-
-  &__figure {
-    margin: 50px auto 20px;
-    max-width: 800px;
-    position: relative;
-  }
-
-  &__caption {
-    color: $white;
-    font-family: $sans-serif;
-    font-size: 5rem;
-    position: absolute;
-    text-align: center;
-    text-shadow: 0px 1px 25px black;
-    text-transform: uppercase;
-    top: 260px;
-    width: 100%;
-  }
-
-  &__photo {
-    max-width: 100%;
   }
 }
 
