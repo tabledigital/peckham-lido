@@ -24,6 +24,7 @@
   }
 
   li {
+    break-inside: avoid;
     display: block;
 
     /*
@@ -54,4 +55,16 @@
       }
     }
   }
+}
+
+.alphabet {
+  break-after: avoid-column;
+	color: $turquoise;
+	font-family: $sans-serif;
+	font-size: 2rem;
+	margin: 2rem 0 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
 }
