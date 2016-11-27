@@ -1,8 +1,12 @@
 .news {
-  background-image: url(/assets/images/grass.jpg);
+  background-image: url(/assets/images/grass-mob.jpg);
   background-size: cover;
   padding-bottom: 70px;
   padding-top: 50px;
+
+  @media(min-width: $bp-small-med) {
+    background-image: url(/assets/images/grass.jpg);
+  }
 
   & > h2 {
       color: $dark;

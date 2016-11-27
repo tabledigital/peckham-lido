@@ -14,6 +14,10 @@ h1 {
 	text-align: center;
 
 	@media(min-width: $bp-small-med) {
+		font-size: 4rem;
+	}
+
+	@media(min-width: $bp-med) {
 		font-size: 5.625rem;
 	}
 }

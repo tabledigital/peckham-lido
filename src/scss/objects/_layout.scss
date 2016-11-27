@@ -44,11 +44,15 @@ main > section {
 }
 
 .commonplace {
-  background: url(/assets/images/lido-architect.jpg);
+  background: url(/assets/images/lido-architect-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 105px;
+
+  @media(min-width: $bp-small-med) {
+    background-image: url(/assets/images/lido-architect.jpg);
+  }
 }
 
 
@@ -68,12 +72,16 @@ main > section {
 }
 
 .social-channels {
-  background-image: url(/assets/images/lido-group.jpg);
+  background-image: url(/assets/images/lido-group-mob.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding-top: 120px;
+
+  @media(min-width: $bp-small-med) {
+    background-image: url(/assets/images/lido-group.jpg);
+  }
 
   .highlight {
     margin-left: auto;

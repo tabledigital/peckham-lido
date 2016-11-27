@@ -1,13 +1,17 @@
 .about {
-  background-image: url(/assets/images/peckham-lido-classic-bw.jpg);
+  background-image: url(/assets/images/peckham-lido-classic-bw-mob.jpg);
   background-size: cover;
   background-position: 25% 0;
   background-repeat: no-repeat;
   background-color: $about-bg;
   background-blend-mode: multiply;
 
+  @media(min-width: $bp-small-med) {
+    background-image: url(/assets/images/peckham-lido-classic-bw.jpg);
+  }
+
   h1 {
-    margin: 25vh auto 2rem auto;
+    margin: 25vh auto 1rem auto;
     width: 100%;
 
     @media(min-width: $bp-small-med) {
@@ -24,7 +28,7 @@
   max-width: 600px;
   text-align: center;
 
-  @media(min-width: $bp-small-med) {
+  @media(min-width: $bp-med) {
     font-size: 2rem;
     margin: 0 auto 25vh;
   }
