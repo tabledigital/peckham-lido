@@ -3,8 +3,6 @@
   background-size: cover;
   background-position: 25% 0;
   background-repeat: no-repeat;
-  background-color: $about-bg;
-  background-blend-mode: multiply;
 
   @media(min-width: $bp-small-med) {
     background-image: url(/assets/images/peckham-lido-classic-bw.jpg);
